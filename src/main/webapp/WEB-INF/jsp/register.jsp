@@ -13,6 +13,7 @@
 
 </head>
 <body>
+<h2 style="margin-left: 250px;color: red;font-family: Verdana;font-size: 20px">Registration Form</h2>
 <form action="registerAction" method="post">
     <div class="form-group">
         <label for="firstName">First Name</label>
@@ -20,7 +21,7 @@
     </div>
     <div class="form-group">
         <label for="lastName">Last Name</label>
-        <input type="text" name="firstName" id="lastName"/>
+        <input type="text" name="lastName" id="lastName"/>
     </div>
     <div class="form-group">
         <label for="email">E-mail</label>
