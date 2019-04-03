@@ -14,12 +14,12 @@
 <h3>Welcome to our webSite</h3>
     Summary : <br> <br>
     <label for="firstName"> First Name : </label>
-    <output id="firstName">${firstName}</output>
+    <output id="firstName">${user.firstName}</output>
     <br> <br>
     <label for="lastName"> Last Name : </label>
-    <output id="lastName">${lastName}</output>
+    <output id="lastName">${user.lastName}</output>
     <br> <br>
     <label for="email"> E-mail : </label>
-    <output id="email">${email}</output>
+    <output id="email">${user.email}</output>
 </body>
 </html>

@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
     <title>Title</title>
@@ -13,25 +14,25 @@
 
 </head>
 <body>
-<h2 style="margin: 250px;color: red;font-family: Verdana;font-size: 20px">Registration Form</h2>
-<form action="registerAction" method="post">
+<h2 style="margin-left: 250px;color: red;font-family: Verdana;font-size: 20px">Registration Form</h2>
+<form:form action="registerAction" modelAttribute="user">
     <div class="form-group">
         <label for="firstName">First Name</label>
-        <input type="text" name="firstName" id="firstName"/>
+        <form:input type="text" name="firstName" id="firstName" path="firstName"/>
     </div>
     <div class="form-group">
         <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" id="lastName"/>
+        <form:input type="text" name="lastName" id="lastName" path="lastName"/>
     </div>
     <div class="form-group">
         <label for="email">E-mail</label>
-        <input type="text" name="email" id="email"/>
+        <form:input type="text" name="email" id="email" path="email"/>
     </div>
     <div class="form-group">
         <label for="password">Password</label>
-        <input type="text" name="password" id="password"/>
+        <form:input type="text" name="password" id="password" path="password"/>
     </div>
     <input type="submit" name="submit" class="btn btn-default">
-</form>
+</form:form>
 </body>
 </html>

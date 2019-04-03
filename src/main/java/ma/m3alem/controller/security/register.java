@@ -1,7 +1,9 @@
 package ma.m3alem.controller.security;
 
+import ma.m3alem.entities.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,21 +12,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class register {
 
     @RequestMapping("/register")
-    public String displayRegister(){
+    public String displayRegister(Model model){
+        User user = new User();
+        model.addAttribute("user" , user);
         return "register";
     }
     @RequestMapping(value = "/registerAction" , method = RequestMethod.POST )
-    public String displayNewUser(@RequestParam(value="firstName") String firstName
-                                 ,@RequestParam(value="lastName") String lastName
-                                 ,@RequestParam(value="email") String email
-                                 ,@RequestParam(value="password") String password
-                                 ,Model model){
-        model.addAttribute("firstName" ,firstName);
-        model.addAttribute("lastName" ,lastName);
-        model.addAttribute("email" ,email);
-        model.addAttribute("messageErr","ouups " +firstName+ " : incorrect password");
-        if(password.equals("admin"))
-          return "user" ;
-            return "viewpage2" ;
+    public String displayNewUser(@ModelAttribute("user") User user){
+            return "user" ;
     }
 }
