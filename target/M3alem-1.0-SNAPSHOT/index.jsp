@@ -9,6 +9,8 @@
 <html>
 <body>
 <a href="hello1">Spring MVC</a> ||
-<a href="hello2">Spring Boot</a>
+<a href="hello2">Spring Boot</a> ||
+<br> <br>
+<a href="register" >Register From Here</a>
 </body>
 </html>
