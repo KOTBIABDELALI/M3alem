@@ -1,10 +1,11 @@
 package ma.m3alem.entities;
 
 public class User {
-    private String firstName ;
-    private String lastName ;
-    private String email ;
-    private String password ;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
+    private String type;
 
     public User() {
     }
@@ -40,4 +41,13 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
 }

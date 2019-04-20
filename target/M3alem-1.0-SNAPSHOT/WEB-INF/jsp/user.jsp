@@ -21,5 +21,8 @@
     <br> <br>
     <label for="email"> E-mail : </label>
     <output id="email">${user.email}</output>
+    <br> <br>
+    <label for="type"> You are  : </label>
+    <output id="type">${user.type}</output>
 </body>
 </html>

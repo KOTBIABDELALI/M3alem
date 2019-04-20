@@ -45,5 +45,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.1.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:5.1.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-websocket:5.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:2.5" level="project" />
+    <orderEntry type="library" name="Maven: jstl:jstl:1.2" level="project" />
   </component>
 </module>

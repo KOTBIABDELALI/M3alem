@@ -13,11 +13,12 @@
 
     <!-- Provide support for component scanning -->
     <context:component-scan base-package="ma.m3alem.controller" />
-
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
     <!--Provide support for conversion, formatting and validation -->
     <mvc:annotation-driven/>
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+
 </beans>
